@@ -1,0 +1,42 @@
+main:
+    get user program number
+
+    get user's file
+
+    switch
+        if 1 run overall_revenue
+        if 2 run balance
+        if 3 ask given questions, then run tally
+
+overall_revenue:
+    open given file
+    while(has next line)
+        sum += value from second column
+
+    sum -= 0 id value
+
+    print(sum);
+
+    return 0;
+
+balance:
+    open given file
+    while(has next line)
+        sum += value from second column
+
+    print sum
+
+    return 0;
+
+tally:
+    open given file
+    int count = 0;
+    while(has next line)
+        if(left column id == given id)
+            count++;
+            value += second column value
+
+    append or overwrite based on what user said in main
+
+    return 0;
+

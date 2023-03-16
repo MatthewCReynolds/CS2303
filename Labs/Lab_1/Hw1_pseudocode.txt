@@ -1,0 +1,37 @@
+Psuedocode:
+    main:
+        get month from user
+        print CalendarHeader
+        call printcalendar() inputting year's starting date from get_year_start()
+
+    printCalendar():
+        for every month of the year
+            printMonthandYearHeader
+
+            if first month of the year
+                call printMonth starting with calculated first day of week
+            else
+                call printMonth starting with previous months end date of week
+    
+    printMonth():
+        calculate days in month using switch case
+
+        print days of week header
+
+        for duration of month
+            if its sunday, print and make a new lines
+            else print the days number
+
+        return end day of week + 1
+
+    printMonthName():
+        switch case for what number month it is
+            if february do math to determine if its a leap year or not
+            if year % 400 == 0
+                true
+            if year % 100 == 0
+                false
+            if year % 4 == 0
+                true
+            else
+                false

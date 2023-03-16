@@ -1,0 +1,75 @@
+main(){
+    this was provided to us by Professor Mortensen so, idk ask her how it works
+}
+
+get_totals(){
+    given the month data for each product
+
+    create a array of 51 length, fill with 0s
+
+    sum up all the sales for the 6 month period for each product and store in the new array
+
+    if product has <=0 sales
+        print out 0s instead of data
+    else
+        print out id the associated sum of month's sales
+}
+
+get_profits(){
+    given the month data for each product and the profit/cost data
+
+    create a array of 51 length, fill with 0s
+
+    sum up all the sales for the 6 month period for each product and store in the new array
+
+    for all 50 items
+        calculate sales
+        calculate profit
+        calculate revenue
+
+        if <= 0 sales
+            print 0s
+        else
+            print formatted calculated numbers
+}
+
+top_earner(){
+    given the month data for each product and the profit/cost data
+
+    create a array of 51 length, fill with 0s
+
+    sum up all the sales for the 6 month period for each product and store in the new array
+
+    for all 10 items
+        for all 50 items
+            calculate sales
+            calculate profit
+            calculate revenue
+
+            if greatest revenue
+                set revenue to new revenue
+                set index to this index
+
+        print formatted info
+        set index to 0 so there's no repeats
+}
+
+readCosts(){
+    given the number of items
+
+    create a float array using malloc
+
+    read through Costs.txt file and copy over all things in the correct column into the array
+
+    return array
+}
+
+readPurch(){
+    given the number of items
+
+    create a float array using malloc
+
+    read through Costs.txt file and copy over all things in the correct column into the array
+
+    return array
+}

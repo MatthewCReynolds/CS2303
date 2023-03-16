@@ -1,0 +1,22 @@
+main:
+    given a year
+    for every month in a year
+        printMonthName()
+
+printMonthName():
+    switch case
+        each month is its own case
+        the number of the month sets days to its number of days
+        february has its own calculation to figure num of days for leapyear
+            if february do math to determine if its a leap year or not
+            if year % 400 == 0
+                true
+            if year % 100 == 0
+                false
+            if year % 4 == 0
+                true
+            else
+                false
+
+    print year
+    return the num of days in the month
